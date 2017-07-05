@@ -4,6 +4,8 @@
 
 Custom plugin for [Reaction Commerce](https://reactioncommerce.com) 
 
+![alt text](https://raw.githubusercontent.com/carlos-olivera/Next-Reaction/master/public/resources/screencapture.png)
+
 ## Quick Guide
 
 1. Add this package to your Reaction Commerce project: `/imports/custom`
