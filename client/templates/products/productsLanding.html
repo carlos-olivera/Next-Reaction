@@ -1,0 +1,42 @@
+<template name="nextProductsLanding">
+
+   <article class="r12wrap">
+     <section class="highres-9 lowres-full medres-9">
+       {{>carousel}}
+     </section>
+     <section id="banner-lateral" class="highres-3 lowres-off medres-off">
+       <div>
+         <a href="#"><img src="/resources/banner_v.jpg"/></a>
+       </div>
+     </section>
+   </article>
+
+  <div class="rui separator padding xs">
+    <h2 style="text-align:center">Featuring Products</h2>
+    <hr>
+  </div>
+
+  {{#if ready}}
+    {{>productGrid products=products}}
+
+    {{#if loadMoreProducts}}
+      <div class="product-load-more" id="productScrollLimitLoader">
+          <button
+            class="btn btn-inverse btn-block btn-lg"
+            data-i18n="app.loadMoreProducts"
+            data-event-action="loadMoreProducts">Load more products</button>
+      </div>
+    {{/if}}
+
+    {{#unless Template.subscriptionsReady}}
+      <div class="spinner-container">
+        <div class="spinner"></div>
+      </div>
+    {{/unless}}
+  {{else}}
+    <div class="spinner-container spinner-container-lg">
+      <div class="spinner"></div>
+    </div>
+  {{/if}}
+  
+</template>

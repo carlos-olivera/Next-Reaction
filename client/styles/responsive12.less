@@ -1,0 +1,152 @@
+/*
+ * Contentrex responsive-12
+ *
+ * The MIT License (MIT)
+ *
+ * Copyright (c) 2013 Michael Bauer <michael.bauer@multimediamanager.eu>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ *
+ */
+
+/* Reset */
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; *behavior: url(boxsizing.htc); }
+
+.r12wrap .centered { float: none !important; margin-left: auto !important; margin-right: auto !important; }
+.r12wrap .normalize { margin: 0 !important; padding: 0 !important; }
+.r12wrap .flr { float: right !important; }
+.r12wrap .fll { float: left !important; }
+
+/* Container-Defaults */
+.r12wrap { margin-left: auto; margin-right: auto; width: 100%; }
+
+.r12wrap .full { float: left; margin-left: 0; margin-right: 0; width: 100%; }
+.r12wrap .half { float: left; margin-left: 0; margin-right: 0; width: 50%; }
+.r12wrap .third { float: left; margin-left: 0; margin-right: 0; width: 33.33333333333333%; }
+.r12wrap .off { display: none; }
+
+.r12wrap:after { clear: both; content: "."; display: block; height: 0; line-height: 0; visibility: hidden; }
+
+.r12wrap [class*="lowres-"] { float: left; margin-left: 0; margin-right: 0; }
+.r12wrap [class*="lowres-"].right { float: right; }
+
+.r12wrap [class*="medres-"] { float: left; margin-left: 0; margin-right: 0; }
+.r12wrap [class*="medres-"].right { float: right; }
+
+.r12wrap [class*="highres-"] { float: left; margin-left: 0; margin-right: 0; }
+.r12wrap [class*="highres-"].right { float: right; }
+
+/* lowres, 1 - 567 px */
+.r12wrap .lowres-1 { width: 33.33333333333333%; }
+.r12wrap .lowres-2 { width: 66.66666666666667%; }
+.r12wrap .lowres-3 { width: 100%; }
+
+.r12wrap .lowres-third { width: 33.33333333333333%; }
+.r12wrap .lowres-half { width: 50%; }
+.r12wrap .lowres-full { width: 100%; }
+
+.r12wrap .lowres-push-1 { margin-left: 33.33333333333333%; }
+.r12wrap .lowres-push-2 { margin-left: 66.66666666666667%; }
+
+.r12wrap .lowres-push-third { margin-left: 33.33333333333333%; }
+.r12wrap .lowres-push-half { margin-left: 50%; }
+
+.r12wrap .lowres-hidden { visibility: hidden; }
+.r12wrap .lowres-off { display: none; }
+
+/* medres, 560 - 959 px  568 = IPhone 5 landscape */
+@media screen and (min-width: 560px) {
+.r12wrap [class*="lowres-push-"] { margin-left: 0; margin-right: 0; }
+
+.r12wrap .medres-1 { width: 16.66666666666667%; }
+.r12wrap .medres-2 { width: 33.33333333333333%; }
+.r12wrap .medres-3 { width: 50%; }
+.r12wrap .medres-4 { width: 66.66666666666667%; }
+.r12wrap .medres-5 { width: 83.33333333333333%; }
+.r12wrap .medres-6 { width: 100%; }
+
+.r12wrap .medres-third { width: 33.33333333333333%; }
+.r12wrap .medres-half { width: 50%; }
+.r12wrap .medres-full { width: 100%; }
+
+.r12wrap .medres-push-1 { margin-left: 16.66666666666667%; }
+.r12wrap .medres-push-2 { margin-left: 33.33333333333333%; }
+.r12wrap .medres-push-3 { margin-left: 50%; }
+.r12wrap .medres-push-4 { margin-left: 66.66666666666667%; }
+.r12wrap .medres-push-5 { margin-left: 83.33333333333333%; }
+
+.r12wrap .medres-push-third { margin-left: 33.33333333333333%; }
+.r12wrap .medres-push-half { margin-left: 50%; }
+
+.r12wrap .lowres-hidden { visibility: visible; }
+.r12wrap .lowres-off { display: inline }
+.r12wrap .medres-hidden { visibility: hidden; }
+.r12wrap .medres-off { display: none; }
+}
+
+/* highres, 960 - 1343px */
+@media screen and (min-width: 960px) {
+.r12wrap [class*="medres-push-"] { margin-left: 0; margin-right: 0; }
+
+.r12wrap .highres-1  { width: 8.333333333333333%; }
+.r12wrap .highres-2  { width: 16.66666666666667%; }
+.r12wrap .highres-3  { width: 25%; }
+.r12wrap .highres-4  { width: 33.33333333333333%; }
+.r12wrap .highres-5  { width: 41.66666666666667%; }
+.r12wrap .highres-6  { width: 50%; }
+.r12wrap .highres-7  { width: 58.33333333333333%; }
+.r12wrap .highres-8  { width: 66.66666666666667%; }
+.r12wrap .highres-9  { width: 75%; }
+.r12wrap .highres-10 { width: 83.33333333333333%; }
+.r12wrap .highres-11 { width: 91.66666666666667%; }
+.r12wrap .highres-12 { width: 100%; }
+
+.r12wrap .highres-third { width: 33.33333333333333%; }
+.r12wrap .highres-half { width: 50%; }
+.r12wrap .highres-full { width: 100%; }
+
+.r12wrap .highres-push-1  { margin-left: 8.333333333333333%; }
+.r12wrap .highres-push-2  { margin-left: 16.66666666666667%; }
+.r12wrap .highres-push-3  { margin-left: 25%; }
+.r12wrap .highres-push-4  { margin-left: 33.33333333333333%; }
+.r12wrap .highres-push-5  { margin-left: 41.66666666666667%; }
+.r12wrap .highres-push-6  { margin-left: 50%; }
+.r12wrap .highres-push-7  { margin-left: 58.33333333333333%; }
+.r12wrap .highres-push-8  { margin-left: 66.66666666666667%; }
+.r12wrap .highres-push-9  { margin-left: 75%; }
+.r12wrap .highres-push-10 { margin-left: 83.33333333333333%; }
+.r12wrap .highres-push-11 { margin-left: 91.66666666666667%; }
+
+.r12wrap .highres-push-third { margin-left: 34.375%; }
+.r12wrap .highres-push-half { margin-left: 51.0416666666666667%; }
+
+.r12wrap .medres-hidden { visibility: visible; }
+.r12wrap .medres-off { display: inline }
+.r12wrap .highres-hidden { visibility: hidden; }
+.r12wrap .highres-off { display: none; }
+}
+
+/* highres, Fix Layout above 1344px*/
+@media screen and (min-width: 1344px) {
+.r12wrap { width: 1344px; }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+/* Retina-specific stuff here */
+}
