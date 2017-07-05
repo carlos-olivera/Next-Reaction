@@ -19,6 +19,15 @@ Custom plugin for [Reaction Commerce](https://reactioncommerce.com)
 5. Add tag "featured" to your products in order to appear in the home page
 
 
+## Features
+
+-   Custom header
+-   Custom footer
+-   Custom Products landing
+-   Image Carousel
+-   Styles
+
+
 ### License
 
 Copyright © [GNU General Public License v3.0](./LICENSE.md)
