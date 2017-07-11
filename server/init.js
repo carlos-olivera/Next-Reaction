@@ -20,6 +20,23 @@ function addRolesToVisitors() {
   });
 }
 
+function changeHeaderAndFooter(){
+
+  Packages.update(
+    {
+        $or:[{"layout.0.structure.layoutHeader":"layoutHeader"},{"layout.0.structure.layoutHeader":"checkoutHeader"}]
+    },
+    { $set: {
+        "layout.0.structure.layoutFooter":"layoutFooterNextReaction",
+        "layout.0.structure.layoutHeader":"layoutHeaderNextReaction"
+    }},
+    {
+        "multi" : true,  
+        "upsert" : false  
+    }
+    );
+}
+
 function changeLayouts(shopId, newLayout) {
   check(shopId, String);
   check(newLayout, String);
@@ -39,4 +56,5 @@ function changeLayouts(shopId, newLayout) {
 Hooks.Events.add("afterCoreInit", () => {
   addRolesToVisitors();
   changeLayouts(Reaction.getShopId(), "coreLayoutnextreaction");
+  changeHeaderAndFooter();
 });
