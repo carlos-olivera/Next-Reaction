@@ -31,7 +31,7 @@ Custom plugin for [Reaction Commerce](https://reactioncommerce.com)
 ## Configuration notes
 
 - Copy the folder /public/resources to main /public Meteor folder
-- After remove the plugin you must execute "reaction reset"
+- After remove the plugin you must execute "reaction reset" from the command line
 - If the custom footer does not appear in the first run, restart reaction
 
 
