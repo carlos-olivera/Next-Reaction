@@ -4,6 +4,8 @@
 
 Custom plugin for [Reaction Commerce](https://reactioncommerce.com) 
 
+For RC version v1.2 and v1.3 (not compatible with v1.4)
+
 ![alt text](https://raw.githubusercontent.com/carlos-olivera/Next-Reaction/master/public/resources/screencapture.png)
 
 ## Quick Guide
