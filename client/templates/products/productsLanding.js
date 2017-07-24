@@ -85,7 +85,7 @@ Template.nextProductsLanding.onCreated(function () {
 
     // we are caching `currentTag` or if we are not inside tag route, we will
     // use shop name as `base` name for `positions` object
-    const currentTag = "destacado";//ReactionProduct.getTag();
+    const currentTag = "featured";
     const productCursor = Products.find({
       ancestors: [],
       type: { $in: ["simple"] }
